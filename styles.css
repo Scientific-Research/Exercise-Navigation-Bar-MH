@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  color: rgb(186, 170, 170);
+  width: 99vw;
+  height: 97vh;
+  border: 3px solid black;
+}
+
+nav {
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+section nav div {
+  margin-bottom: 1rem;
+}
