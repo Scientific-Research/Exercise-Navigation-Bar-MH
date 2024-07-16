@@ -4,31 +4,49 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%; /* 1rem => 10px*/
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
 }
 
 section {
-  color: rgb(186, 170, 170);
-  width: 99vw;
-  height: 97vh;
-  border: 3px solid black;
+  /* width: 99vw;
+  height: 97vh; */
+  /* border: 3px solid black; */
 }
 
-nav {
+nav div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 
   background-color: black;
-  padding: 2rem;
-  align-items: center;
+  padding: 1rem 0;
 }
 
+nav div a {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav div a:hover {
+  color: #fff;
+}
+
+/* For tablet and larger screens(from 768px to the top!(to more pixels!)) */
 @media screen and (min-width: 768px) {
-  nav {
+  nav div {
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 2rem;
+  }
+  nav div a:last-child {
+    margin-right: 1rem; /*only 1rem margin-right for the last element => contact*/
   }
 }
